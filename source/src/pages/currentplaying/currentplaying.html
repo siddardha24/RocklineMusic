@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Rockline Music</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="bg-image" style="background: url(assets/img/bg.jpg), linear-gradient(rgb(34, 167, 240),rgb(0, 0, 0));background-size: cover;background-blend-mode: overlay;" class="mask">
+  <!-- <div style="height: 50px;width: 100%;text-align: center;font-size: 25px">{{progressBar}}</div> -->
+
+      <ion-card style=" height: 370px;background: rgba(34, 49, 63, 0.81);">
+        <div class="frame">
+          <img class="pimage" style="padding: 25px;" src="{{jsonData.image}}" />
+        </div>
+        <div class="songName">
+          Track Name: {{jsonData.trackName}}
+        </div>
+        <div class="songArtist">
+          Album Name: {{jsonData.albumName}}
+        </div>
+      </ion-card>
+
+<ion-row style="background: rgba(34, 49, 63, 0.81);padding-bottom: 10px;">
+<ion-col col col-2 style="color: #ccc;width: 100%;text-align: center;">
+<!-- {{progress}} -->
+</ion-col>
+<ion-col col col-8 style="padding-top: 9px;">
+<progress-bar [progress]="progressBar" >
+</progress-bar>
+</ion-col>
+<ion-col col col-2 style="color: #ccc;width: 100%;text-align: center;">
+<!-- {{duration}} -->
+</ion-col>
+</ion-row>
+
+
+<ion-row style="padding-top: 10px;">
+<ion-col col col-2 style="text-align: center;">
+  <ion-icon class="musicControl" name="rewind"></ion-icon>
+</ion-col>
+<ion-col col col-2 style="text-align: center;">
+  <ion-icon class="musicControl" name="skip-backward"></ion-icon>
+</ion-col>
+<ion-col col col-4>
+<div class="play">
+   <img *ngIf="!playing" src="assets/img/play.png" class="pimage" (click)="play(jsonData)">
+   <img *ngIf="playing" src="assets/img/pause.png" class="pimage" (click)="pause(jsonData)">
+</div>
+</ion-col>
+<ion-col col col-2 style="text-align: center;">
+  <ion-icon class="musicControl" name="skip-forward"></ion-icon>
+</ion-col>
+<ion-col col col-2 style="text-align: center;">
+  <ion-icon class="musicControl" name="fastforward"></ion-icon>
+</ion-col>
+</ion-row>
+
+</ion-content>
+<ion-footer>
+<ion-row>
+<ion-col col col-2>
+  <ion-icon class="volume" name="volume-mute"></ion-icon>
+</ion-col>
+<ion-col col col-8>
+      <ion-range min="0" max="100"  color="#fff" [(ngModel)]="volume"  (ionChange)="changeVolume(volume)" ></ion-range>
+</ion-col>
+<ion-col col col-2>
+  <ion-icon class="volume" name="volume-up"></ion-icon>
+</ion-col>
+</ion-row>
+
+</ion-footer>

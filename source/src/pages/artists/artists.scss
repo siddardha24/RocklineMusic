@@ -1,0 +1,170 @@
+page-artists {
+.button-md {
+    padding: 0px;
+    height: 55px;
+}     
+.item-md ion-thumbnail ion-img, .item-md ion-thumbnail img {
+    width: 64px;
+    height: 57px;
+    /* text-align: center; */
+}
+.item-md ion-thumbnail {
+    min-width: 80px;
+    min-height: 0px;
+}
+
+ion-icon {
+    display: inline-block;
+    font-size: 2.2em;
+}
+    .pageHeader {
+       position: absolute;
+    top: 15px;
+    left: 86px;
+    color: #fff;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+.item-md, .item-ios {
+    color: #8f8f8f;
+    background-color: rgba(0, 0, 0, 0.58);
+}
+.item-md.item-block .item-inner, .item-ios.item-block .item-inner {
+    padding-right: 8px;
+    border-bottom: 0px solid #dedede;
+}
+.list-md, .list-ios {
+    margin: -1px 0 0px;
+}
+.scroll-content {
+    background: rgba(34, 167, 240, 0.37);
+}
+  ion-card {
+    position: relative;
+    height: 130px;
+    width: 100% !important;
+  }
+  ion-card img {
+    display: block;
+    width: auto;
+  }
+
+  .select-md {
+    padding: 7px 8px 5px 5px;
+  }
+
+  .scroll-content {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 106px;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    will-change: scroll-position;
+    contain: size style layout;
+  }
+
+  .item-label-stacked .select-md,
+  .item-label-floating .select-md {
+    padding-left: 0;
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }
+
+  .item-md.item-block .item-inner {
+    padding-right: 8px;
+    border-bottom: 0;
+  }
+
+  .select-md .select-icon {
+    position: relative;
+    width: 12px;
+    height: 19px;
+    display: none;
+  }
+
+  .gallery-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(37, 37, 37, 0.5)!important;
+    bottom: 0;
+    min-height: 45px;
+    border-bottom: 1px solid transparent !important;
+    ion-icon {
+      position: absolute;
+      right: 10px;
+      top: 20px;
+      color: theme-colors('textColors', 'primary');
+      font-size: icon-size('icon-small');
+    }
+  }
+  .top {
+    background: #222;
+  }
+  ion-row {
+    display: block;
+    &[responsive-md] [width-25] {
+      width: 50%;
+      display: block;
+      float: left;
+    }
+  }
+
+  .album-tile {
+    padding: 5px;
+    font-weight: bold;
+    color: #ccc;
+  }
+
+  .album-songs{
+    position: absolute;
+    bottom: 0;
+    color: #ccc;
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+    font-style: italic;
+  }
+
+  .zoom-in {
+    -webkit-animation: zoomIn 500ms;
+    -moz-animation: zoomIn 500ms;
+    -o-animation: zoomIn 500ms;
+    animation: zoomIn 500ms;
+  }
+  .frame {
+    height: 229px;
+    width: 100%;
+    background: rgba(34, 167, 240, 0.5);
+    /*can be anything*/
+    position: relative;
+  }
+  .pimage {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  ul.rating[_ngcontent-c0] li[_ngcontent-c0] {
+    display: inline;
+    border: 0px;
+    background: none;
+    padding: 5px 2px;
+  }
+}

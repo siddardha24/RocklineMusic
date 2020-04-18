@@ -1,0 +1,44 @@
+page-settings {
+
+.scroll-content {
+    background: rgba(34, 167, 240, 0.37);
+}
+
+.item-md p, .item-ios p {
+    color: #dfdfdf;
+}
+
+.toolbar-title-md {
+    padding: 0 12px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+.item-md h3, .item-md h4, .item-md h5, .item-md h6 {
+    margin: 2px 0;
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: normal;
+}
+ion-label {
+    font-size: inherit;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.item-md, .item-ios {
+    color: #fff;
+    background-color: rgba(34, 167, 240, 0.37);
+}
+.item-md.item-block .item-inner, .item-ios.item-block .item-inner {
+    padding-right: 8px;
+    border-bottom: 0px solid #dedede;
+}
+.list-md, .list-ios {
+    margin: -1px 0 0px;
+}
+.item-ios p {
+    color: #ccc;
+}
+
+}

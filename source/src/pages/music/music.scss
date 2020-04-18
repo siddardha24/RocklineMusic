@@ -1,0 +1,50 @@
+page-music {
+
+  .scroll-content {
+    background: rgba(34, 167, 240, 0.37);
+  }
+
+  .item-md ion-thumbnail ion-img,
+  .item-ios ion-thumbnail ion-img,
+  .item-md ion-thumbnail img,
+  .item-ios ion-thumbnail img {
+    width: 64px;
+    height: 57px;
+    /* text-align: center; */
+  }
+  .item-md ion-thumbnail,
+  .item-ios ion-thumbnail {
+    min-width: 80px;
+    min-height: 0px;
+  }
+
+
+  .item-md,
+  .item-ios {
+    color: #8f8f8f;
+    background-color: rgba(0, 0, 0, 0.58);
+  }
+  .item-md.item-block .item-inner,
+  .item-ios.item-block .item-inner {
+    padding-right: 8px;
+    border-bottom: 0px solid #dedede;
+  }
+  .list-md,
+  .list-ios {
+    margin: -1px 0 0px;
+  }
+
+  .item-md ion-thumbnail[item-start],
+  .item-ios ion-thumbnail[item-start] {
+    margin: 10px 0px;
+  }
+
+  ion-label {
+    white-space: normal;
+  }
+
+  .item-md h2,
+  .item-ios h2 {
+    color: #d8d8d8;
+  }
+}

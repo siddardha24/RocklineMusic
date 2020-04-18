@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Rockline Music</ion-title>
+    <ion-buttons end royal>
+      <button ion-button (click)="search()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class="bg-image" style="background: url(assets/img/bg.jpg);background-size: cover;">
+  <div style="background: rgba(34, 167, 240, 0.37);padding: 0px;">
+    <ion-item style="font-weight: bold;background: rgba(0, 0, 0, 0.4392156862745098);color:white;" (click)="allMusic()">
+      <div style="color:white;"></div>
+      <ion-icon name="headset" item-left></ion-icon>
+      ALL MUSIC
+      <ion-icon name="play" item-right></ion-icon>
+    </ion-item>
+    <ion-row nowrap style="padding: 30px 0px;">
+      <ion-col col-3>
+        <button ion-button color='primary' clear (click)="albums()">
+          <div style="color: black;font-weight: bold;">
+            <ion-icon name="disc" style="font-size: 40px;color:white;"></ion-icon>
+            <br>
+            <label style="color: #fff">ALBUMS</label>
+          </div>
+        </button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button color='primary' clear (click)="artists()">
+          <div style="color: black;font-weight: bold;">
+            <ion-icon name="person" style="font-size: 40px;color:white;"></ion-icon>
+            <br>
+            <label style="color: #fff">ARTISTS</label>
+          </div>
+        </button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button color='primary' clear (click)="genres()">
+          <div style="color: black;font-weight: bold;">
+            <ion-icon name="musical-notes" style="font-size: 40px;color:white;"></ion-icon>
+            <br>
+            <label style="color: #fff">GENRES</label>
+          </div>
+        </button>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button color='primary' clear (click)="folders()">
+          <div style="color: black;font-weight: bold;">
+            <ion-icon name="folder-open" style="font-size: 40px;color:white;"></ion-icon>
+            <br>
+            <label style="color: #fff">FOLDERS</label>
+          </div>
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div style="">
+    <ion-item style="font-weight: bold;background: rgba(34, 167, 240, 0.37);color:white;border-top: 1px solid;">
+      PLAYLIST
+      <ion-icon name="add" item-right style="margin-right: 31px;" (click)="doPrompt()"></ion-icon>
+      <ion-icon name="arrow-forward" item-right (click)="playlist()"></ion-icon>
+    </ion-item>
+    <div>
+      <ion-list>
+        <ion-item style="border-top: 1px solid;" (click)="favourite()">
+            <ion-icon item-start name="thumbs-up" class="playlist-icon"></ion-icon>
+          <h2 style="font-weight: bold;">FAVOURITE</h2>
+          <P style="color:white;">5 Songs</P>
+        </ion-item>
+        <ion-item style="border-top: 1px solid;" (click)="recentPlay()">
+            <ion-icon item-start name="timer" class="playlist-icon"></ion-icon>
+          <h2 style="font-weight: bold;">RECENTLY PLAYED</h2>
+          <P style="color:white;">8 Song</P>
+        </ion-item>
+        <ion-item style="border-top: 1px solid;" (click)="recentAdd()">
+            <ion-icon item-start name="musical-note" class="playlist-icon"></ion-icon>
+          <h2 style="font-weight: bold;">RECENTLY ADDED</h2>
+          <P style="color:white;">4 Songs</P>
+        </ion-item>
+        <ion-item style="border-top: 1px solid;" (click)="mostPlay()">
+            <ion-icon item-start name="flash" class="playlist-icon"></ion-icon>
+          <h2 style="font-weight: bold;">MOST PLAYED</h2>
+          <P style="color:white;">11 Songs</P>
+        </ion-item>
+        <ion-item style="border-top: 1px solid;" (click)="ringtone()">
+            <ion-icon item-start name="musical-notes" class="playlist-icon"></ion-icon>
+          <h2 style="font-weight: bold;">RINGTONE</h2>
+          <P style="color:white;">7 Songs</P>
+        </ion-item>
+        <!-- <ion-item style="border-top: 1px solid;" *ngFor="SearchResults">
+          {{item.title_name}} 
+        </ion-item>  -->
+      </ion-list>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <div (click)="nowPlaying()">
+    <ion-item style="background: #22313F;background-size: contain;">
+      <ion-thumbnail item-start>
+        <img src="assets/img/closer.jpg">
+      </ion-thumbnail>
+      <h2>Orange Love Idi</h2>
+      <p style="color:#fff">Orange</p>
+      <ion-icon name="play" item-right></ion-icon>
+      <ion-icon name="skip-forward" item-right></ion-icon>
+    </ion-item>
+  </div>
+</ion-footer>

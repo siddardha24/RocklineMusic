@@ -1,0 +1,25 @@
+<ion-menu type="reveal" [content]="content">
+    <ion-header>
+    <ion-list style="margin: 0px;">
+        <ion-item style="">
+            <ion-thumbnail item-left>
+                <img style="padding: 10px;" src="assets/img/logo.jpg">
+            </ion-thumbnail>
+            <h2 style="text-transform: capitalize;">Rockline Music</h2>
+        </ion-item>
+    </ion-list>
+    </ion-header>
+
+    <ion-content>
+        <ion-list>
+            <button ion-item *ngFor="let p of pages" (click)="openPage(p)" [class.activeHighlight]=checkActive(p)>
+                <ion-icon name="{{p.icon}}" item-left></ion-icon>
+                {{p.title}}
+            </button>
+        </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

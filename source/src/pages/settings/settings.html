@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="bg-image" style="background: url(assets/img/bg.jpg);background-size: contain;">
+	<div>
+	<ion-label style="font-size: 1.8rem;color: #fff;margin-left: 10px;">
+		Playback option
+	</ion-label>
+		<div style="border-radius: 15px !important;background: rgba(0, 0, 0, 0.439216);">
+	<ion-list>
+  <ion-item>
+  	 <ion-label> Show lock screen<p>show now playing view when turn screen on</p> </ion-label>
+  	 
+  <ion-toggle checked="false"></ion-toggle>
+  </ion-item>
+    <ion-item>
+    	 <ion-label> Change song by shaking<p>Shake to the new song</p> </ion-label>
+  <ion-toggle checked="true"></ion-toggle>
+  </ion-item>
+    <ion-item>
+    	 <ion-label> Volume fade in and out<p>Swith songs,the volume limit transition</p> </ion-label>
+  <ion-toggle checked="true"></ion-toggle>
+  </ion-item>
+</ion-list>
+	</div>
+		<ion-label style="font-size: 1.8rem;color: #fff;margin-left: 10px;">
+		Player Option
+	</ion-label>
+		<div style="border-radius: 15px !important;background: rgba(0, 0, 0, 0.439216);">
+	<ion-list>
+  <ion-item>
+  	 <ion-label>Equalizer Preferences</ion-label>
+  <ion-toggle checked="true"></ion-toggle>
+  </ion-item>
+    <ion-item>
+    	 <ion-label>Language</ion-label>
+  <ion-toggle checked="false"></ion-toggle>
+  </ion-item>
+    <ion-item>
+    	 <ion-label>Set study mode</ion-label>
+  <ion-toggle checked="false"></ion-toggle>
+  </ion-item>
+</ion-list>
+	</div>
+		<ion-label style="font-size: 1.8rem;color: #fff;margin-left: 10px;">
+		Headset settings
+	</ion-label>
+		<div style="border-radius: 15px !important;background: rgba(0, 0, 0, 0.439216);">
+	<ion-list>
+  <ion-item>
+  		 <ion-label>Paused when unplugged</ion-label>
+  <ion-toggle checked="false"></ion-toggle>
+  </ion-item>
+    <ion-item>
+    	 <ion-label>Play when inserted</ion-label>
+  <ion-toggle checked="true"></ion-toggle>
+  </ion-item>
+    <ion-item>
+    	<ion-label>Headset control allowed</ion-label>
+  <ion-toggle checked="false"></ion-toggle>
+  </ion-item>
+</ion-list>
+	</div>
+</div>
+</ion-content>

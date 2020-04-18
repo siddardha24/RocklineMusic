@@ -1,0 +1,5 @@
+[{ "id": 1, "img": "1.jpg", "folderName": "DCIM", "folderSubtitle": "1 songs/storage","className":"DcimPage"},
+ { "id": 2, "img": "1.jpg", "folderName": "Download", "folderSubtitle": "245 songs/storage","className":"DownloadPage"},
+ { "id": 3, "img": "1.jpg", "folderName": "WhatsApp Audio", "folderSubtitle": "29 songs/storage","className":"WhatsappAudioPage"},
+ { "id": 4, "img": "1.jpg", "folderName": "Bluetooth", "folderSubtitle": "35 songs/storage","className":"BluetoothPage"},
+ { "id": 5 , "img": "1.jpg", "folderName": "Ringtones", "folderSubtitle": "9 songs/storage","className":"FolderRingtonePage"}]

@@ -1,0 +1,128 @@
+page-currentplaying {
+
+  .zoom-in {
+    -webkit-animation: zoomIn 500ms;
+    -moz-animation: zoomIn 500ms;
+    -o-animation: zoomIn 500ms;
+    animation: zoomIn 500ms;
+  }
+  .frame {
+    height: 289px;
+    width: 100%;
+    opacity: 0.8;
+    background: rgba(34, 167, 240, 0.5);
+    /*can be anything*/
+    position: relative;
+  }
+  .pimage {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .songName {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #ccc;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .songArtist {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .card-md,
+  .card-ios {
+    margin: 0px;
+    border-radius: 0px;
+    width: 100%;
+  }
+
+  .progress-outer[_ngcontent-c0] {
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 10px;
+  }
+  .progress-inner[_ngcontent-c0] {
+    border-radius: 0px;
+    padding: 0px;
+    color: #488aff;
+    height: 8px;
+  }
+
+  .play {
+    height: 90px;
+    width: 100%;
+    /*background: rgba(34, 167, 240, 0.5);*/
+    position: relative;
+  }
+
+  .pimage {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .volume {
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .musicControl {
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    padding: 32px 0px;
+  }
+
+  .playTime {
+    color: #ccc;
+    width: 100%;
+    text-align: center;
+  }
+
+  .progress-inner[_ngcontent-c0] {
+    min-width: 0%;
+  }
+
+.mask {
+/*    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='svgMask'><feGaussianBlur stdDeviation='10' /></filter></svg>#svgMask");*/
+}
+
+}

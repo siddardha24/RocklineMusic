@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Search</ion-title>
+    <ion-buttons end royal>
+      <button ion-button (click)="listenForSpeech()">
+        <ion-icon name="mic"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class="bg-image" style="background: url(assets/img/bg.jpg);background-size: cover;">
+  <ion-list>
+    <ion-item *ngFor = "let item of items">
+        <ion-avatar item-start>
+          <img src = {{item.image}}>
+        </ion-avatar>
+        <ion-label (click)="playSong(item)">
+          <h1>Album Name: {{item.albumName}}</h1>
+          <h1>Track Name : {{item.trackName}} </h1>
+        </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer>
+  <div (click)="nowPlaying()">
+    <ion-item style="background: #22313F;background-size: contain;">
+      <ion-thumbnail item-start>
+        <img src="assets/img/closer.jpg">
+      </ion-thumbnail>
+      <h2>Orange Love Idi</h2>
+      <p style="color:#fff">Orange</p>
+      <ion-icon name="md-play" item-right></ion-icon>
+      <ion-icon name="md-skip-forward" item-right></ion-icon>
+    </ion-item>
+  </div>
+</ion-footer>

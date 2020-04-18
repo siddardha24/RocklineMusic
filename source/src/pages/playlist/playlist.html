@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Playlists</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="bg-image" style="background: url(assets/img/bg.jpg);background-size: cover;">
+  <ion-row style="margin-top: 0px;padding: 5px;">
+    <ion-col col-6 col-sm-3 *ngFor=" let item of animateList; let i=index ">
+      <ion-card style="margin: 0px 0px 0px 0px;   height: 215px;background: rgba(34, 49, 63, 0.81);" (click)="openList(item)">
+        <div class="frame">
+          <img class="pimage" src="{{item.image}}" />
+        </div>
+        <div class="album-tile">
+          {{item.name}}
+        </div>
+        <div class="album-songs">
+          <span>{{item.songs}} songs</span>
+        </div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <div>
+    <ion-item style="font-weight: bold;background: rgba(34, 167, 240, 0.37);color:white;border-top: 1px solid;">
+      PLAYLIST
+    </ion-item>
+    <div>
+      <ion-list>
+        <ion-item style="border-top: 1px solid #ccc;" *ngFor="let item of playList" (click)="openList(item)">
+          <ion-avatar item-start>
+            <ion-icon name="{{item.icon}}"></ion-icon>
+          </ion-avatar>
+          <h2 style="font-weight: bold;">{{item.name}}</h2>
+          <P style="color:white;">{{item.songs}} songs</P>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <div (click)="nowPlaying()">
+    <ion-item style="background: #22313F;background-size: contain;">
+      <ion-thumbnail item-start>
+        <img src="assets/img/closer.jpg">
+      </ion-thumbnail>
+      <h2>Orange Love Idi</h2>
+      <p style="color:#fff">Orange</p>
+      <ion-icon name="play" item-right></ion-icon>
+      <ion-icon name="skip-forward" item-right></ion-icon>
+    </ion-item>
+  </div>
+</ion-footer>
